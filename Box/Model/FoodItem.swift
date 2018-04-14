@@ -16,8 +16,9 @@ class FoodItem
     var price : Float
     var type : TypeOfFood
     var quality : TypeOfQuality
+    var category : TypeOfCatogries
     
-    init(name : String, description : String , price : Float, type : TypeOfFood?,quality : TypeOfQuality?)
+    init(name : String, description : String , price : Float, type : TypeOfFood?,quality : TypeOfQuality? , category : TypeOfCatogries)
     {
         self.name = name
         self.description = description
@@ -39,6 +40,7 @@ class FoodItem
         {
             self.quality = .CLASSIC
         }
+        self.category = category
     }
     
     func getDiscountedPrice(percentege : Float)
