@@ -21,14 +21,10 @@ class ViewController:  UICollectionViewController, CustomLayoutDelegate //UIView
             }
         }
     }
-    
-    struct Model {
-        var index: Int
-        var isBig: Bool
-    }
+    var names = ["Fusion Box","Curries","Biryani","Wraps","Ice Cream"]
     
     private let dataSet = [Model(index: 1, isBig: true), Model(index: 2, isBig: false), Model(index: 3, isBig: false),
-                           Model(index: 4, isBig: true), Model(index: 5, isBig: false), Model(index: 6, isBig: false),
+                           Model(index: 4, isBig: true), Model(index: 5, isBig: true), Model(index: 6, isBig: false),
                            Model(index: 7, isBig: false), Model(index: 8, isBig: false), Model(index: 9, isBig: true),
                            Model(index: 10, isBig: true), Model(index: 11, isBig: false), Model(index: 12, isBig: false)]
     
@@ -45,8 +41,9 @@ class ViewController:  UICollectionViewController, CustomLayoutDelegate //UIView
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? MyCollectionViewCell
-        cell?.itemName.text = "\(dataSet[indexPath.row].index)"
+        cell?.itemName.text =  "\(names[(indexPath.row) % 5])" //"\(dataSet[indexPath.row].index)"
         cell?.backgroundColor = UIColor.cyan
+        cell?.itemImage.image = UIImage(named: "\(arc4random() % 5).png")
         
         return cell ?? UICollectionViewCell()
     }
@@ -56,7 +53,7 @@ class ViewController:  UICollectionViewController, CustomLayoutDelegate //UIView
         indexPath: IndexPath,
                         with width: CGFloat) -> CGFloat {
         
-        let heightSizes = [100,216]
+        let heightSizes = [150,300]
         return CGFloat(heightSizes[dataSet[indexPath.row].isBig ? 1 : 0])
     }
 //    fileprivate let itemsPerRow: CGFloat = 2
@@ -135,3 +132,7 @@ class ViewController:  UICollectionViewController, CustomLayoutDelegate //UIView
 //}
 //
 
+struct Model {
+    var index: Int
+    var isBig: Bool
+}
