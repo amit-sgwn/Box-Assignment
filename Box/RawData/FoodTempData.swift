@@ -31,6 +31,7 @@ struct FoodItemObjects
         fusionItemslist.append(FoodItem(name : "Rajma Chawal Box", description : "Rajma Chawal Box with fried rice " , price : 90.0, type : .vag ,quality : .CLASSIC , category : .Fusion))
         fusionItemslist.append(FoodItem(name : "Grilled Tikki Box", description : " Grilled Tikki Box  " , price : 100.0, type : .vag ,quality : .CLASSIC , category : .Fusion))
         fusionItemslist.append(FoodItem(name : "Dal Makhni Rice Box", description : "Paneer Masala Box with salad " , price : 120.0, type : .vag ,quality : .SUPREME , category : .Fusion))
+        return fusionItemslist
     }
     
     mutating func getCurries() -> [FoodItem]

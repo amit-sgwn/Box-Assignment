@@ -62,29 +62,15 @@ extension UIPageViewController : BmoViewPagerDataSource {
     
     // Required
     func bmoViewPagerDataSourceNumberOfPage(in viewPager: BmoViewPager) -> Int {
-        return 4
+        return 5
     }
     func bmoViewPagerDataSource(_ viewPager: BmoViewPager, viewControllerForPageAt page: Int) -> UIViewController {
-        switch page {
-        case 0:
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "DemoViewController0") as? DemoViewController0 {
-                return vc
-            }
-        case 1:
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "DemoViewController1") as? DemoViewController1 {
-                return vc
-            }
-        case 2:
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "DemoViewController2") as? DemoViewController2 {
-                return vc
-            }
-        case 3:
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "DemoViewController3") as? DemoViewController3 {
-                return vc
-            }
-        default:
-            break
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "FoodItemViewController") as? FoodItemViewController
+        {
+             return vc
         }
+        
+
         return UIViewController()
     }
 }
