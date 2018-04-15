@@ -48,6 +48,11 @@ class FoodItem
         return price.afterDiscount(percentage: percentege)
     }
     
+    func getPrice(noOfItems : Int) -> float
+    {
+        return noOfItems * price
+    }
+    
 }
 
 
