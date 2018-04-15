@@ -48,9 +48,9 @@ class FoodItem
         return price.afterDiscount(percentage: percentege)
     }
     
-    func getPrice(noOfItems : Int) -> float
+    func getPrice(noOfItems : Int) -> Float
     {
-        return noOfItems * price
+        return Float(noOfItems) * price
     }
     
 }
@@ -66,6 +66,14 @@ enum TypeOfQuality : String
 {
     case CLASSIC
     case SUPREME
+    func simpleDescription() -> String {
+        switch self {
+        case .CLASSIC:
+            return "Classic"
+        case .SUPREME:
+            return "Supreme"
+        }
+    }
 }
 
 extension Float

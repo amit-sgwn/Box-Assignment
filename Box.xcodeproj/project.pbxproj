@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28097061208341CD00953FCA /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28097060208341CD00953FCA /* FoodTableViewCell.swift */; };
 		2886F2FC2081C3CD008B0D08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886F2FB2081C3CD008B0D08 /* AppDelegate.swift */; };
 		2886F2FE2081C3CD008B0D08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886F2FD2081C3CD008B0D08 /* ViewController.swift */; };
 		2886F3012081C3CD008B0D08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2886F2FF2081C3CD008B0D08 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28097060208341CD00953FCA /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		2886F2F82081C3CD008B0D08 /* Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Box.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2886F2FB2081C3CD008B0D08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2886F2FD2081C3CD008B0D08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				2886F3362081D8ED008B0D08 /* MyCollectionViewCell.swift */,
 				2886F33D20820685008B0D08 /* UICustomCollectionViewLayout.swift */,
 				289338CD208256B600AF6DA9 /* UnderLineView.swift */,
+				28097060208341CD00953FCA /* FoodTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				2886F2FE2081C3CD008B0D08 /* ViewController.swift in Sources */,
 				289338D62082640100AF6DA9 /* FoodTempData.swift in Sources */,
 				289338D220825F7600AF6DA9 /* FoodItemViewController.swift in Sources */,
+				28097061208341CD00953FCA /* FoodTableViewCell.swift in Sources */,
 				2886F34C208239B5008B0D08 /* PageViewController.swift in Sources */,
 				289338D02082574400AF6DA9 /* CatogeryItemViewController.swift in Sources */,
 				2886F33E20820685008B0D08 /* UICustomCollectionViewLayout.swift in Sources */,
