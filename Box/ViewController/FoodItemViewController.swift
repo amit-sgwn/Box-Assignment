@@ -23,7 +23,7 @@ class FoodItemViewController: UIViewController , UITableViewDelegate, UITableVie
         super.viewDidLoad()
         setFoodItems()
         // Register the table view cell class and its reuse id
-        self.foodtabel.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        self.foodtabel.register(FoodTableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         foodtabel.delegate = self
         foodtabel.dataSource = self
@@ -33,6 +33,7 @@ class FoodItemViewController: UIViewController , UITableViewDelegate, UITableVie
     
     func setFoodItems()
     {
+        fusion = [[FoodItem]]()
         fusion?.append(items.getFusionBoxitems())
         fusion?.append(items.getCurries())
         fusion?.append(items.getBiryaniItems())

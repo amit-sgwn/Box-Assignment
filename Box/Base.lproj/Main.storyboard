@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="1428" y="139.880059970015"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Custom Page View Controller-->
         <scene sceneID="XbC-tD-8Ax">
             <objects>
-                <viewController id="jHH-UK-9oJ" customClass="UIPageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomPageViewController" id="jHH-UK-9oJ" customClass="CustomPageViewController" customModule="Box" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptv-er-tPO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +106,7 @@
         <!--Food Item View Controller-->
         <scene sceneID="8YQ-J9-XiP">
             <objects>
-                <viewController id="U3W-j6-x1N" customClass="FoodItemViewController" customModule="Box" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodItemViewController" id="U3W-j6-x1N" customClass="FoodItemViewController" customModule="Box" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Clq-ZR-ngw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +115,7 @@
                                 <rect key="frame" x="8" y="28" width="359" height="631"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodTable" rowHeight="300" id="HGh-iX-X8D" customClass="FoodTableViewCell" customModule="Box" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="foodTable" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodTable" rowHeight="300" id="HGh-iX-X8D" customClass="FoodTableViewCell" customModule="Box" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="359" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HGh-iX-X8D" id="SF2-h6-k2k">

@@ -48,14 +48,20 @@ class ViewController:  UICollectionViewController, CustomLayoutDelegate //UIView
         return cell ?? UICollectionViewCell()
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                        heightForItemAt
-        indexPath: IndexPath,
-                        with width: CGFloat) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, heightForItemAt indexPath: IndexPath, with width: CGFloat) -> CGFloat {
         
         let heightSizes = [150,300]
         return CGFloat(heightSizes[dataSet[indexPath.row].isBig ? 1 : 0])
     }
+  
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+                // handle tap events
+                print("You selected cell #\(indexPath.item)!")
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let destination = storyboard.instantiateViewController(withIdentifier: "CustomPageViewController") as! CustomPageViewController
+        navigationController?.pushViewController(destination, animated: true)
+        
+            }
 //    fileprivate let itemsPerRow: CGFloat = 2
 //
 //

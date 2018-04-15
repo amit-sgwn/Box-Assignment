@@ -11,7 +11,7 @@ import BmoViewPager
 
 private let mainColor = UIColor(red: 1.0/255.0, green: 55.0/255.0, blue: 132.0/255.0, alpha: 1.0)
 
-class UIPageViewController: UIViewController {
+class CustomPageViewController: UIViewController {
 
     @IBOutlet weak var viewPager: BmoViewPager!
     @IBOutlet weak var viewPagerNavigationBar: BmoViewPagerNavigationBar!
@@ -35,7 +35,7 @@ class UIPageViewController: UIViewController {
 }
 
 
-extension UIPageViewController : BmoViewPagerDataSource {
+extension CustomPageViewController : BmoViewPagerDataSource {
    
     func bmoViewPagerDataSourceNaviagtionBarItemNormalAttributed(_ viewPager: BmoViewPager, navigationBar: BmoViewPagerNavigationBar, forPageListAt page: Int) -> [NSAttributedStringKey : Any]? {
         return [
