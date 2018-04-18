@@ -219,6 +219,7 @@
                                     <constraint firstItem="AFV-pF-X6I" firstAttribute="leading" secondItem="f1P-7p-qFQ" secondAttribute="leading" id="Llf-zE-tJz"/>
                                     <constraint firstAttribute="height" constant="374" id="OAx-TD-MXh"/>
                                     <constraint firstAttribute="width" constant="250" id="hsT-Ye-7Io"/>
+                                    <constraint firstAttribute="bottom" secondItem="AFV-pF-X6I" secondAttribute="bottom" constant="20" id="ing-N4-tOS"/>
                                     <constraint firstItem="AFV-pF-X6I" firstAttribute="top" secondItem="f1P-7p-qFQ" secondAttribute="top" constant="14" id="sQv-m7-dGf"/>
                                 </constraints>
                             </view>
@@ -232,21 +233,24 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bot-an-4yI" secondAttribute="bottom" id="0cg-Y4-prN"/>
                             <constraint firstItem="f1P-7p-qFQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0h8-wl-lg2"/>
                             <constraint firstItem="f1P-7p-qFQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2oV-aw-KVU"/>
-                            <constraint firstItem="Bot-an-4yI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9lo-rZ-7XE"/>
-                            <constraint firstItem="Bot-an-4yI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="A9H-mt-Juh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bot-an-4yI" secondAttribute="trailing" id="Dzv-iZ-2IH"/>
-                            <constraint firstItem="Bot-an-4yI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ICO-eF-D5J"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bot-an-4yI" secondAttribute="trailing" id="JfU-wT-m3e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bot-an-4yI" secondAttribute="bottom" id="hnn-Bc-ZtS"/>
+                            <constraint firstItem="Bot-an-4yI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="61u-Y7-8rx"/>
                             <constraint firstItem="Bot-an-4yI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pyP-39-iQi"/>
+                            <constraint firstAttribute="trailing" secondItem="Bot-an-4yI" secondAttribute="trailing" id="wQQ-Jx-g5x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="jzd-uG-7bu">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="XGQ-s6-K9j">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-menu-50" id="XGQ-s6-K9j">
                             <color key="tintColor" red="0.08235294118" green="0.49019607840000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showMenuItems:" destination="BYZ-38-t0r" id="OXZ-7q-vWU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="leadingConstraint" destination="61u-Y7-8rx" id="Afp-7A-Q88"/>
+                        <outlet property="trailingConstraint" destination="wQQ-Jx-g5x" id="7GJ-qi-hKk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -366,6 +370,7 @@
         <image name="icons8-heart-64" width="64" height="64"/>
         <image name="icons8-home-50" width="50" height="50"/>
         <image name="icons8-invite-80" width="80" height="80"/>
+        <image name="icons8-menu-50" width="50" height="50"/>
         <image name="icons8-tracking-50" width="50" height="50"/>
         <image name="icons8-user-male-50" width="50" height="50"/>
     </resources>
