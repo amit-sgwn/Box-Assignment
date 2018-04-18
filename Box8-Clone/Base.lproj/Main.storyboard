@@ -222,11 +222,23 @@
                                     <constraint firstItem="AFV-pF-X6I" firstAttribute="top" secondItem="f1P-7p-qFQ" secondAttribute="top" constant="14" id="sQv-m7-dGf"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bot-an-4yI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bot-an-4yI" secondAttribute="bottom" id="0cg-Y4-prN"/>
                             <constraint firstItem="f1P-7p-qFQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0h8-wl-lg2"/>
                             <constraint firstItem="f1P-7p-qFQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2oV-aw-KVU"/>
+                            <constraint firstItem="Bot-an-4yI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9lo-rZ-7XE"/>
+                            <constraint firstItem="Bot-an-4yI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="A9H-mt-Juh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bot-an-4yI" secondAttribute="trailing" id="Dzv-iZ-2IH"/>
+                            <constraint firstItem="Bot-an-4yI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ICO-eF-D5J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bot-an-4yI" secondAttribute="trailing" id="JfU-wT-m3e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bot-an-4yI" secondAttribute="bottom" id="hnn-Bc-ZtS"/>
+                            <constraint firstItem="Bot-an-4yI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pyP-39-iQi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
