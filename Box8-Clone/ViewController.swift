@@ -41,6 +41,12 @@ class ViewController: UIViewController {
             isHamburgerShown = !isHamburgerShown
         }
         
+        UIView.animate(withDuration: 0.2, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: {animation in
+            print("hello")
+        })
+        
     }
     
 }
