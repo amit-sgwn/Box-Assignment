@@ -14,6 +14,7 @@
 		2800B44A208793C40096B552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2800B448208793C40096B552 /* LaunchScreen.storyboard */; };
 		28339FC4208B1F61000E28AD /* CustomCatogariesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28339FC3208B1F61000E28AD /* CustomCatogariesCell.swift */; };
 		28339FC6208B2B95000E28AD /* UICustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28339FC5208B2B95000E28AD /* UICustomCollectionViewLayout.swift */; };
+		28339FCB208B2DDA000E28AD /* CatogeryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28339FCA208B2DDA000E28AD /* CatogeryViewModel.swift */; };
 		28DF2918208B0D4900CA8FF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DF2917208B0D4900CA8FF3 /* Images.xcassets */; };
 		28DF291B208B131A00CA8FF3 /* Restaurent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF291A208B131A00CA8FF3 /* Restaurent.swift */; };
 		28DF291D208B141400CA8FF3 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF291C208B141400CA8FF3 /* FoodItem.swift */; };
@@ -29,6 +30,7 @@
 		2800B44B208793C40096B552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28339FC3208B1F61000E28AD /* CustomCatogariesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCatogariesCell.swift; sourceTree = "<group>"; };
 		28339FC5208B2B95000E28AD /* UICustomCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomCollectionViewLayout.swift; sourceTree = "<group>"; };
+		28339FCA208B2DDA000E28AD /* CatogeryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatogeryViewModel.swift; sourceTree = "<group>"; };
 		28DF2917208B0D4900CA8FF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28DF291A208B131A00CA8FF3 /* Restaurent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurent.swift; sourceTree = "<group>"; };
 		28DF291C208B141400CA8FF3 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		2800B43E208793B90096B552 /* Box8-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				28339FC9208B2DAE000E28AD /* ViewModel */,
 				28339FC2208B1F04000E28AD /* View */,
 				28DF2919208B123400CA8FF3 /* Model */,
 				2800B43F208793B90096B552 /* AppDelegate.swift */,
@@ -79,11 +82,35 @@
 		28339FC2208B1F04000E28AD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				28339FC3208B1F61000E28AD /* CustomCatogariesCell.swift */,
-				28339FC5208B2B95000E28AD /* UICustomCollectionViewLayout.swift */,
-				2800B441208793B90096B552 /* ViewController.swift */,
+				28339FC8208B2CE3000E28AD /* ViewControllers */,
+				28339FC7208B2CCB000E28AD /* CustomViews */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		28339FC7208B2CCB000E28AD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				28339FC5208B2B95000E28AD /* UICustomCollectionViewLayout.swift */,
+				28339FC3208B1F61000E28AD /* CustomCatogariesCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		28339FC8208B2CE3000E28AD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2800B441208793B90096B552 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28339FC9208B2DAE000E28AD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				28339FCA208B2DDA000E28AD /* CatogeryViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		28DF2919208B123400CA8FF3 /* Model */ = {
@@ -169,6 +196,7 @@
 			files = (
 				28339FC4208B1F61000E28AD /* CustomCatogariesCell.swift in Sources */,
 				28339FC6208B2B95000E28AD /* UICustomCollectionViewLayout.swift in Sources */,
+				28339FCB208B2DDA000E28AD /* CatogeryViewModel.swift in Sources */,
 				28DF291D208B141400CA8FF3 /* FoodItem.swift in Sources */,
 				28DF291B208B131A00CA8FF3 /* Restaurent.swift in Sources */,
 				2800B442208793B90096B552 /* ViewController.swift in Sources */,

@@ -15,7 +15,7 @@ public class UICustomCollectionViewLayout: UICollectionViewLayout {
     private var showFooter = false
     
     public var numberOfColumns = 2
-    public var cellPadding: CGFloat = 8.0
+    public var cellPadding: CGFloat = 2.0
     
     private var cache = [UICollectionViewLayoutAttributes]()
     

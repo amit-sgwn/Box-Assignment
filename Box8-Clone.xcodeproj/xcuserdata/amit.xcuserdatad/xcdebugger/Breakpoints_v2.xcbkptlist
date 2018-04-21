@@ -19,5 +19,147 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Box8-Clone/View/ViewControllers/ViewController.swift"
+            timestampString = "546008274.349581"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "collectionView(_:heightForItemAt:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Box8-Clone/View/CustomViews/UICustomCollectionViewLayout.swift"
+            timestampString = "546008274.350005"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "UICustomCollectionViewLayout"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Box8_Clone.UICustomCollectionViewLayout.delegate.getter : Swift.ImplicitlyUnwrappedOptional&lt;Box8_Clone.CustomLayoutDelegate&gt;"
+                  moduleName = "Box8-Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amit/Desktop/iOSLearning/Box8-Clone/Box8-Clone/View/CustomViews/UICustomCollectionViewLayout.swift"
+                  timestampString = "546007484.485972"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Box8_Clone.UICustomCollectionViewLayout.delegate.setter : Swift.ImplicitlyUnwrappedOptional&lt;Box8_Clone.CustomLayoutDelegate&gt;"
+                  moduleName = "Box8-Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amit/Desktop/iOSLearning/Box8-Clone/Box8-Clone/View/CustomViews/UICustomCollectionViewLayout.swift"
+                  timestampString = "546007484.488837"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Box8_Clone.UICustomCollectionViewLayout.init() -&gt; Box8_Clone.UICustomCollectionViewLayout"
+                  moduleName = "Box8-Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amit/Desktop/iOSLearning/Box8-Clone/Box8-Clone/View/CustomViews/UICustomCollectionViewLayout.swift"
+                  timestampString = "546007484.491721"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Box8_Clone.UICustomCollectionViewLayout.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Box8_Clone.UICustomCollectionViewLayout&gt;"
+                  moduleName = "Box8-Clone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amit/Desktop/iOSLearning/Box8-Clone/Box8-Clone/View/CustomViews/UICustomCollectionViewLayout.swift"
+                  timestampString = "546007484.494571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Box8-Clone/View/CustomViews/UICustomCollectionViewLayout.swift"
+            timestampString = "546008274.350069"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "prepare()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Box8-Clone/View/CustomViews/UICustomCollectionViewLayout.swift"
+            timestampString = "546008274.350125"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "prepare()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Box8-Clone/View/CustomViews/UICustomCollectionViewLayout.swift"
+            timestampString = "546008274.350181"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "prepare()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

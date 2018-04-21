@@ -14,7 +14,7 @@ class CustomCatogariesCell: UICollectionViewCell {
     @IBOutlet weak var catogeryName: UILabel!
     
     
-    var identifier = "customCell"
+    var identifier = "cell"
     
 }
 
