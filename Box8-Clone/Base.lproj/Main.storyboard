@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -304,19 +305,42 @@
                                         <rect key="frame" x="0.0" y="293" width="375" height="240"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kCz-Iv-sfJ">
-                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="itemSize" width="154" height="202"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uMw-bS-Uod">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="uMw-bS-Uod" customClass="CustomCatogariesCell" customModule="Box8_Clone" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="202"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="154" height="202"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HK2-wR-ePg">
+                                                            <rect key="frame" x="0.0" y="0.0" width="154" height="163"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAX-6M-iro">
+                                                            <rect key="frame" x="23" y="163" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                 </view>
+                                                <constraints>
+                                                    <constraint firstItem="QAX-6M-iro" firstAttribute="leading" secondItem="uMw-bS-Uod" secondAttribute="leadingMargin" constant="15" id="9np-eX-UDD"/>
+                                                    <constraint firstItem="HK2-wR-ePg" firstAttribute="leading" secondItem="uMw-bS-Uod" secondAttribute="leading" id="DNX-aa-4ib"/>
+                                                    <constraint firstItem="QAX-6M-iro" firstAttribute="top" secondItem="HK2-wR-ePg" secondAttribute="bottom" id="ZXd-2w-I4w"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="QAX-6M-iro" secondAttribute="bottom" constant="10" id="hZS-QN-iOs"/>
+                                                    <constraint firstItem="HK2-wR-ePg" firstAttribute="top" secondItem="uMw-bS-Uod" secondAttribute="top" id="rBz-1J-k4r"/>
+                                                    <constraint firstAttribute="trailing" secondItem="HK2-wR-ePg" secondAttribute="trailing" id="y1r-Ln-ed6"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="catogeryImage" destination="HK2-wR-ePg" id="jd8-7n-y3f"/>
+                                                    <outlet property="catogeryName" destination="QAX-6M-iro" id="32u-Pw-y7e"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
