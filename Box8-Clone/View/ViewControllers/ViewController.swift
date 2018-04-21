@@ -43,6 +43,30 @@ class ViewController: UIViewController , UIScrollViewDelegate, UICollectionViewD
         categoriesCollectionView.collectionViewLayout = customCollectionViewLayout
         self.customCollectionViewLayout.delegate = self
         self.customCollectionViewLayout.numberOfColumns = 2
+        setTimeForAutoSlide()
+
+    }
+    
+    
+    func setTimeForAutoSlide()
+    {
+        Timer.scheduledTimer(timeInterval: viewModel.timeIntervalForTimer, target: self, selector: #selector(moveToNextPage), userInfo: nil, repeats: true)
+    }
+    
+    @objc func moveToNextPage (){
+        
+        let pageWidth:CGFloat = self.scrollView.frame.width
+        let maxWidth:CGFloat = pageWidth * CGFloat(viewModel.images.count)
+        let contentOffset:CGFloat = self.scrollView.contentOffset.x
+        
+        var slideToX = contentOffset + pageWidth
+        
+        if  contentOffset + pageWidth == maxWidth
+        {
+            slideToX = 0
+        }
+        self.scrollView.scrollRectToVisible(CGRect(x:slideToX, y:0, width:pageWidth, height:self.scrollView.frame.height), animated: true)
+        scrollViewDidEndDecelerating(self.scrollView)
     }
     
     
