@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController , UIScrollViewDelegate {
+class ViewController: UIViewController , UIScrollViewDelegate, UICollectionViewDelegate,UICollectionViewDataSource {
+  
+    
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var trailingConstraint: NSLayoutConstraint!
     
@@ -21,6 +23,7 @@ class ViewController: UIViewController , UIScrollViewDelegate {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var pageControl : UIPageControl!
     @IBOutlet weak var scrollView : UIScrollView!
+    @IBOutlet weak var categoriesCollectionView: UICollectionView!
     
     var images = ["0","1","2","3","4","5","6","7","8","9","10","11"]
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
@@ -31,8 +34,6 @@ class ViewController: UIViewController , UIScrollViewDelegate {
         scrollViewWidth.constant = self.view.frame.size.width
         pageControl.numberOfPages = images.count
        
-      
-
         scrollViewHeight.constant = 248
         scrollView.delegate = self
     }
@@ -75,7 +76,8 @@ class ViewController: UIViewController , UIScrollViewDelegate {
             isHamburgerShown = !isHamburgerShown
             
         }
-        else{
+        else
+        {
             leadingConstraint.constant = 0
             trailingConstraint.constant = 0
             mainView.alpha = 1.0
@@ -88,6 +90,16 @@ class ViewController: UIViewController , UIScrollViewDelegate {
             print("hello")
         })
         
+    }
+    
+    
+    // Collection view methods
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
     }
     
 }

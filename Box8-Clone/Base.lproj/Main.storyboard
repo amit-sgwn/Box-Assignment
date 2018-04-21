@@ -366,6 +366,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="automaticallyAdjustsScrollViewInsets" value="NO"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="categoriesCollectionView" destination="o2L-38-65X" id="8jC-Jl-cIm"/>
                         <outlet property="leadingConstraint" destination="61u-Y7-8rx" id="Afp-7A-Q88"/>
                         <outlet property="mainView" destination="Bot-an-4yI" id="gJk-DI-1rf"/>
                         <outlet property="menuHeightConstraint" destination="OAx-TD-MXh" id="8C3-cv-Not"/>

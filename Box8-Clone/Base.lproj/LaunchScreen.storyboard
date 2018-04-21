@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-1050813_1920" translatesAutoresizingMaskIntoConstraints="NO" id="rKq-vC-cda">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodlaunch" translatesAutoresizingMaskIntoConstraints="NO" id="rKq-vC-cda">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rKq-vC-cda" secondAttribute="bottom" id="2N7-7w-dDk"/>
                             <constraint firstItem="rKq-vC-cda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nZA-pQ-xDO"/>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="food-1050813_1920" width="1440" height="1920"/>
+        <image name="foodlaunch" width="720" height="1280"/>
     </resources>
 </document>

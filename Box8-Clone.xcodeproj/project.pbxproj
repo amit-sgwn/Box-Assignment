@@ -12,6 +12,9 @@
 		2800B445208793BA0096B552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2800B443208793BA0096B552 /* Main.storyboard */; };
 		2800B447208793C40096B552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2800B446208793C40096B552 /* Assets.xcassets */; };
 		2800B44A208793C40096B552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2800B448208793C40096B552 /* LaunchScreen.storyboard */; };
+		28DF2918208B0D4900CA8FF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DF2917208B0D4900CA8FF3 /* Images.xcassets */; };
+		28DF291B208B131A00CA8FF3 /* Restaurent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF291A208B131A00CA8FF3 /* Restaurent.swift */; };
+		28DF291D208B141400CA8FF3 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF291C208B141400CA8FF3 /* FoodItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		2800B446208793C40096B552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2800B449208793C40096B552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2800B44B208793C40096B552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DF2917208B0D4900CA8FF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		28DF291A208B131A00CA8FF3 /* Restaurent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurent.swift; sourceTree = "<group>"; };
+		28DF291C208B141400CA8FF3 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		2800B43E208793B90096B552 /* Box8-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				28DF2919208B123400CA8FF3 /* Model */,
 				2800B43F208793B90096B552 /* AppDelegate.swift */,
 				2800B441208793B90096B552 /* ViewController.swift */,
 				2800B443208793BA0096B552 /* Main.storyboard */,
 				2800B446208793C40096B552 /* Assets.xcassets */,
 				2800B448208793C40096B552 /* LaunchScreen.storyboard */,
 				2800B44B208793C40096B552 /* Info.plist */,
+				28DF2917208B0D4900CA8FF3 /* Images.xcassets */,
 			);
 			path = "Box8-Clone";
+			sourceTree = "<group>";
+		};
+		28DF2919208B123400CA8FF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28DF291A208B131A00CA8FF3 /* Restaurent.swift */,
+				28DF291C208B141400CA8FF3 /* FoodItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2800B44A208793C40096B552 /* LaunchScreen.storyboard in Resources */,
+				28DF2918208B0D4900CA8FF3 /* Images.xcassets in Resources */,
 				2800B447208793C40096B552 /* Assets.xcassets in Resources */,
 				2800B445208793BA0096B552 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DF291D208B141400CA8FF3 /* FoodItem.swift in Sources */,
+				28DF291B208B131A00CA8FF3 /* Restaurent.swift in Sources */,
 				2800B442208793B90096B552 /* ViewController.swift in Sources */,
 				2800B440208793B90096B552 /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PN7TM989A;
 				INFOPLIST_FILE = "Box8-Clone/Info.plist";
@@ -299,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PN7TM989A;
 				INFOPLIST_FILE = "Box8-Clone/Info.plist";
